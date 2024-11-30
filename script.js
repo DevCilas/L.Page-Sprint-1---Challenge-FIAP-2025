@@ -20,14 +20,12 @@ document.querySelectorAll('.toggle-button').forEach(button => {
     button.addEventListener('click', () => {
         const targetId = button.dataset.target;
         const textElement = document.getElementById(targetId);
-
-        // Alterna a visibilidade do texto
         if (textElement.style.display === 'block') {
             textElement.style.display = 'none';
-            button.textContent = button.textContent.replace('v', '>'); // Troca "v" por ">"
+            button.textContent = button.textContent.replace('v', '>'); 
         } else {
             textElement.style.display = 'block';
-            button.textContent = button.textContent.replace('>', 'v'); // Troca ">" por "v"
+            button.textContent = button.textContent.replace('>', 'v'); 
         }
     });
 });
