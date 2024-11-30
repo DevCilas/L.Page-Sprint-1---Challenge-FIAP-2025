@@ -10,11 +10,14 @@
     --azul: #1E0E62;
     --cinza_background: #F9F9F9;
     --cor_fonte: #151439;
-    --opacidade: .66;
+    --opacidade: .30;
     --margin_sections: 0 16.5rem;
     --space10: 1rem;
     --space20: 2rem;
+    --space30: 3rem;
     --space40: 4rem;
+    --space70: 7rem;
+    --spcace100: 10rem;
 
 
 
@@ -25,6 +28,7 @@ header{
     height: 18vmin;
     display: flex;
     align-items: center;
+    margin-bottom: var(--space70);
     
 }
 
@@ -39,7 +43,9 @@ nav{
 }
 
 #logo{
-    width:15%;
+    width:25%;
+    margin-right: 16%;
+    
     
 }
 
@@ -52,6 +58,56 @@ nav a, h1{
 }
 
 #section1{
+    width: 100%;
+    min-height: 100vmin;
+    display: flex;
     padding: var(--margin_sections);
+    padding-top: var(--space40);
     
+    
+}
+
+.textos_section1{
+    width: 65%;
+}
+.textos_section1 h1{
+    overflow: hidden;
+    color: var(--azul);
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 5rem;
+    margin-bottom: var(--space20);
+}
+.textos_section1 p{
+    color: var(--cor_fonte);
+    opacity: var(--opacidade);
+    font-size: 30px;
+    width: 70%;
+    font-weight: 500;
+    margin-bottom: var(--space70);
+}
+.textos_section1 a{
+   
+    padding: 1rem 3.5rem;
+    background-color: var(--azul);
+    font-size: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white; 
+}
+.imagem_section1{
+    width: 35%;
+    height: 80%;
+    margin-bottom: var(--space30);
+}
+#section2{
+    width: 100%;
+    min-height: 5vmin;
+    display: flex;
+    padding: var(--margin_sections);
+    background-color: var(--cinza_background);
+    
+}
+.imagem_section2{
+
 }
