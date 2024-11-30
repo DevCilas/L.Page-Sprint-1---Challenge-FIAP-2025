@@ -6,6 +6,14 @@
     font-family: 'DM Sans', 'sans-serif';
 }
 
+/* css para js */
+
+.feedback-text {
+    display: none;
+  }
+
+/* fim css para js */
+
 :root{
     --azul: #1E0E62;
     --cinza_background: #F9F9F9;
