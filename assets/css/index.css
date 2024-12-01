@@ -31,6 +31,9 @@
 
 }
 
+
+/* ESTILIZAÇÃO DO HEADER */
+
 header{
     width: 100dvw;
     height: 18vmin;
@@ -260,15 +263,19 @@ font-weight: 800;
 
 .lista{
     font-size: 28px;
-    color: #1E0E62;
-    
+    color: var(--azul);
     font-weight: bold;
+    opacity: .80;
 }
+.texto_lista{
+    opacity: .66;
+    font-size: 28px;
+}
+
 .textos_section4 li{
     text-align: justify;
     font-size: 28px;
     font-weight: 500;
-    opacity: .66;
     color: var(--cor_fonte);
     margin-bottom: var(--space20);
 }
@@ -417,6 +424,8 @@ hr{
     opacity: .40;
     line-height: var(--space20);
 }
+
+/* ESTILIZAÇÃO DO RODAPE */
 
 footer{
     width: 100dvw;
