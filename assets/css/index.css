@@ -238,9 +238,11 @@ font-weight: 800;
 
 #section4{
     padding: var(--margin_sections);
+    padding-bottom: var(--space70);
     width: 100%;
     background-color: var(--cinza_background);
     display: flex;
+    column-gap: 6rem;
 }
 .textos_section4{
     padding-top: var(--space100);
@@ -251,16 +253,12 @@ font-weight: 800;
     font-weight: 800;
     color: var(--azul);
 }
-.textos_section4 li{
-    /* display: flex; */
-}
 
 .lista{
-    
     font-size: 28px;
-    color: var(--azul);
-    opacity: .80;
-    font-weight: 800;
+    color: #1E0E62;
+    
+    font-weight: bold;
 }
 .textos_section4 li{
     text-align: justify;
@@ -268,8 +266,114 @@ font-weight: 800;
     font-weight: 500;
     opacity: .66;
     color: var(--cor_fonte);
-
+    margin-bottom: var(--space20);
+}
+.textos_section4 ul{
+    margin-top: var(--space20);
+}
+.imagem_section4{
+    padding-top: 7rem;
+    width: 40%;
 }
 
+/* ESTILIZAÇÃO DA QUiNTA SECTION */
 
+#section5{
+    padding: var(--margin_sections);
+    padding-top: var(--space100);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.textos1_section5{
+    width: 60%;
+}
+.textos1_section5 h1{
+    letter-spacing: 3px;
+    font-size: 40px;
+    color: var(--azul);
+    font-weight: 700;
+}
+.textos1_section5 p{
+    width: 100%;
+    padding-top: var(--space20);
+    padding-bottom: var(--space10);
+    font-weight: 300;
+    font-size: 22px;
+    color: var(--azul);
+    opacity: .66;
+}
+.textos1_section5, button{
+    font-size: 22px;
+    background-color: transparent;
+    color: var(--azul);
+    border: none;
+    font-weight: 700;
+    padding: var(--space10) 0;
+}
+.textos2_section5{
+    padding-bottom: var(--space40);
+}
+hr{
+    width: 68%;
+    padding: var(--margin_sections);
+    border: 1px solid rgb(21, 20, 57, 0.1); 
+}
+.feedback-text{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--cor_fonte);
+    opacity: .66;
+    line-height: var(--space30);
+}
 
+/* ESTILIZAÇÃO DA SEXTA SECTION */
+
+#section6{
+    padding: var(--margin_sections);
+    background-color: var(--cinza_background);
+    padding-top: var(--space70);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contato{
+    width: 30%;
+}
+.contato h1{
+    font-size: 66px;
+    color: var(--azul);
+    font-weight: 700;
+    padding-bottom: var(--space20);
+}
+.telefones{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: var(--space30);
+    
+}
+.telefones img{
+    height: 70%;
+    margin-right: 5%;
+}
+.telefones a{
+    margin: 0 3px;
+    color: var(--azul);
+}
+.dados_contato{
+    width: 100%;
+}
+.dados_contato input{
+    width: 35%;
+    height: 3.5rem;
+    border-radius: 30px;
+    border: 2.5px solid rgb(21, 20, 57, 0.1); 
+    background-color: var(--cinza_background);
+    padding-left: 1.5rem;
+    font-size: 18px;
+    color: var(--cor_fonte);
+    opacity: .66;
+    font-weight: 500;
+}
