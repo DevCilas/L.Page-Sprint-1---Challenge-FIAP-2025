@@ -40,7 +40,7 @@ header{
     
 }
 
-nav{
+.cabecalho{
     box-sizing: border-box;
     padding: var(--margin_sections);
     width: 100%;
@@ -57,10 +57,14 @@ nav{
     
 }
 
-nav a, h1{
+.cabecalho h1{
     color: var(--azul);
     font-size: 20px;
     font-weight: 500;
+    text-decoration: none; 
+}
+.cabecalho a{
+  
     text-decoration: none;
     
 }
@@ -363,10 +367,12 @@ hr{
     color: var(--azul);
 }
 .dados_contato{
+    display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 .dados_contato input{
-    width: 35%;
+    width: 100%;
     height: 3.5rem;
     border-radius: 30px;
     border: 2.5px solid rgb(21, 20, 57, 0.1); 
@@ -376,4 +382,68 @@ hr{
     color: var(--cor_fonte);
     opacity: .66;
     font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+.inputs1{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.inputs2{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--space70);
+}
+.inputs2 button{
+    margin: 0 50%;
+    font-size: 17px;
+    font-weight: 300;
+    height: 25%;
+    width: 50%;
+    background-color: var(--azul);
+    color: white;
+    border-radius: 30px;
+}
+.texto_dados h2{
+    font-size: 22px;
+    color: var(--azul);
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+.texto_dados p{
+    font-size: 16px;
+    color: var(--cor_fonte);
+    opacity: .40;
+    line-height: var(--space20);
+}
+
+footer{
+    width: 100dvw;
+    height: 20vmin;
+    display: flex;
+    align-items: center;
+    
+}
+
+.rodape{
+    background-color: var(--azul);
+    box-sizing: border-box;
+    color: white;
+    padding: var(--margin_sections);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.rodape a, h1{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+i{
+    font-size: 1.8rem;
 }
