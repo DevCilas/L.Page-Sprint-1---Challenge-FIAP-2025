@@ -31,6 +31,9 @@
 
 }
 
+
+/* ESTILIZAÇÃO DO HEADER */
+
 header{
     width: 100dvw;
     height: 18vmin;
@@ -40,7 +43,7 @@ header{
     
 }
 
-nav{
+.cabecalho{
     box-sizing: border-box;
     padding: var(--margin_sections);
     width: 100%;
@@ -57,27 +60,35 @@ nav{
     
 }
 
-nav a, h1{
+.cabecalho h1{
     color: var(--azul);
     font-size: 20px;
     font-weight: 500;
+    text-decoration: none; 
+}
+.cabecalho a{
+  
     text-decoration: none;
     
 }
 
+/* ESTILIZAÇÃO DA PRIMEIRA SECTION */
+
 #section1{
     width: 100%;
-    min-height: 100vmin;
     display: flex;
+    column-gap: 6rem;
     padding: var(--margin_sections);
     padding-top: var(--space40);
     box-sizing: border-box;
     
     
+    
+    
 }
 
 .textos_section1{
-    width: 65%;
+    width: 70%;
 }
 .textos_section1 h1{
     overflow: hidden;
@@ -86,6 +97,7 @@ nav a, h1{
     font-weight: 800;
     line-height: 5rem;
     margin-bottom: var(--space20);
+    margin-top: var(--space40);
 }
 .textos_section1 p{
     color: var(--cor_fonte);
@@ -105,30 +117,43 @@ nav a, h1{
     color: white; 
 }
 .imagem_section1{
-    width: 35%;
-    height: 80%;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
     margin-bottom: var(--space70);
+    overflow-y: visible;
 }
+.imagem_section1 img{
+    width: 100%;
+    height: 31rem;
+    object-fit: cover;
+    z-index: 999;
+    
+}
+
+/* ESTILIZAÇÃO DA SEGUNDA SECTION */
+
 #section2{
     width: 100%;
-    min-height: 5vmin;
     display: flex;
+    column-gap: var(--space30);
     flex-direction: row;
     padding: var(--margin_sections);
+    padding-bottom: var(--space70);
     background-color: var(--cinza_background);
     
 }
 .imagem_section2{
     margin-top: var(--space100);
-    width: 45%;
+    width: 38%;
 }
 .imagem_section2 img{
-    width: 507px;
+    width: 100%;
     height: 620px;
 }
 
 .textos_section2{
-    width: 55%;
+    width: 62%;
 
 }
 .textos_section2 h1{
@@ -147,4 +172,287 @@ nav a, h1{
     min-height: 1rem;
     font-weight: 500;
     margin-bottom: var(--space70);
+}
+
+/* ESTILIZAÇÃO DA TERCEIRA SECTION */
+
+#section3{
+    padding: var(--margin_sections);
+    width: 100%;
+
+}
+
+.textos1_section3{
+    padding-top: var(--space70);
+    width: 100%;
+    border-bottom: 2.5px solid rgb(21, 20, 57, 0.1);
+    
+}
+.textos1_section3 h1{
+color: var(--azul);
+font-size: 66px;
+font-weight: 800;
+}
+.textos1_section3 p{
+    text-align: justify;
+    color: var(--cor_fonte);
+    opacity: .66;
+    font-size: 28px;
+    padding-top: var(--space20);
+    width: 96%;
+    min-height: 1rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    
+}
+.textos2_section3{
+    width: 100%;
+    margin-top: var(--space70);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    padding-bottom: var(--space40);
+    
+}
+.texto1{
+    width: 50%;
+
+}
+.texto1 h1{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--azul);
+}
+.texto1 p{
+    width: 88%;
+    margin-top: var(--space20);
+    font-size: 24px;
+    font-weight: 500;
+    color: #151439;
+    opacity: .66;
+}
+.different_padding{
+    width: 88%;
+    margin: 0 !important;
+    font-size: 24px;
+    font-weight: 500;
+    color: #151439;
+    opacity: .66;
+}
+
+/* ESTILIZAÇÃO DA QUARTA SECTION */
+
+#section4{
+    padding: var(--margin_sections);
+    padding-bottom: var(--space70);
+    width: 100%;
+    background-color: var(--cinza_background);
+    display: flex;
+    column-gap: 6rem;
+}
+.textos_section4{
+    padding-top: var(--space100);
+    width: 60%;
+}
+.textos_section4 h1{
+    font-size: 66px;
+    font-weight: 800;
+    color: var(--azul);
+}
+
+.lista{
+    font-size: 28px;
+    color: var(--azul);
+    font-weight: bold;
+    opacity: .80;
+}
+.texto_lista{
+    opacity: .66;
+    font-size: 28px;
+}
+
+.textos_section4 li{
+    text-align: justify;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--cor_fonte);
+    margin-bottom: var(--space20);
+}
+.textos_section4 ul{
+    margin-top: var(--space20);
+}
+.imagem_section4{
+    padding-top: 7rem;
+    width: 40%;
+}
+
+/* ESTILIZAÇÃO DA QUiNTA SECTION */
+
+#section5{
+    padding: var(--margin_sections);
+    padding-top: var(--space100);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.textos1_section5{
+    width: 60%;
+}
+.textos1_section5 h1{
+    letter-spacing: 3px;
+    font-size: 40px;
+    color: var(--azul);
+    font-weight: 700;
+}
+.textos1_section5 p{
+    width: 100%;
+    padding-top: var(--space20);
+    padding-bottom: var(--space10);
+    font-weight: 300;
+    font-size: 22px;
+    color: var(--azul);
+    opacity: .66;
+}
+.textos1_section5, button{
+    font-size: 22px;
+    background-color: transparent;
+    color: var(--azul);
+    border: none;
+    font-weight: 700;
+    padding: var(--space10) 0;
+}
+.textos2_section5{
+    padding-bottom: var(--space40);
+}
+hr{
+    width: 68%;
+    padding: var(--margin_sections);
+    border: 1px solid rgb(21, 20, 57, 0.1); 
+}
+.feedback-text{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--cor_fonte);
+    opacity: .66;
+    line-height: var(--space30);
+}
+
+/* ESTILIZAÇÃO DA SEXTA SECTION */
+
+#section6{
+    padding: var(--margin_sections);
+    background-color: var(--cinza_background);
+    padding-top: var(--space70);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contato{
+    width: 30%;
+}
+.contato h1{
+    font-size: 66px;
+    color: var(--azul);
+    font-weight: 700;
+    padding-bottom: var(--space20);
+}
+.telefones{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: var(--space30);
+    
+}
+.telefones img{
+    height: 70%;
+    margin-right: 5%;
+}
+.telefones a{
+    margin: 0 3px;
+    color: var(--azul);
+}
+.dados_contato{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.dados_contato input{
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 30px;
+    border: 2.5px solid rgb(21, 20, 57, 0.1); 
+    background-color: var(--cinza_background);
+    padding-left: 1.5rem;
+    font-size: 18px;
+    color: var(--cor_fonte);
+    opacity: .66;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+.inputs1{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.inputs2{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--space70);
+}
+.inputs2 button{
+    margin: 0 50%;
+    font-size: 17px;
+    font-weight: 300;
+    height: 25%;
+    width: 50%;
+    background-color: var(--azul);
+    color: white;
+    border-radius: 30px;
+}
+.texto_dados h2{
+    font-size: 22px;
+    color: var(--azul);
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+.texto_dados p{
+    font-size: 16px;
+    color: var(--cor_fonte);
+    opacity: .40;
+    line-height: var(--space20);
+}
+
+/* ESTILIZAÇÃO DO RODAPE */
+
+footer{
+    width: 100dvw;
+    height: 20vmin;
+    display: flex;
+    align-items: center;
+    
+}
+
+.rodape{
+    background-color: var(--azul);
+    box-sizing: border-box;
+    color: white;
+    padding: var(--margin_sections);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.rodape a, h1{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+i{
+    font-size: 1.8rem;
 }
