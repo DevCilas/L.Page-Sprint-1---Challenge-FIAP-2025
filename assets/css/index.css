@@ -339,6 +339,10 @@ hr{
     line-height: var(--space30);
 }
 
+.buttonContato{
+    cursor: pointer;
+}
+
 /* ESTILIZAÇÃO DA SEXTA SECTION */
 
 #section6{
@@ -425,6 +429,9 @@ hr{
     line-height: var(--space20);
 }
 
+.toggle-button{
+    cursor: pointer;
+}
 /* ESTILIZAÇÃO DO RODAPE */
 
 footer{
