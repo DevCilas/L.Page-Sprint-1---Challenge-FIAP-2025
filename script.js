@@ -9,7 +9,7 @@ function smoothScroll(e) {
     }
   }
 
-  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.onclick = smoothScroll;
   });
 
